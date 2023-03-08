@@ -27,12 +27,11 @@ const fs = require('fs');
             listName.push({title: name, link: link});
         })
 
-        return listName
+        return listName;
     });
 
     fs.writeFile('datas.json', JSON.stringify(names, null, 2), err => {
-        if(err) console.log(err)
-        console.log('monstro!!')
+        if(err) console.log(err);
     });
     
 })()
